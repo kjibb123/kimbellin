@@ -66,7 +66,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #1E7A46;
+	background: #fff;
 	margin-bottom: 20px;
 	border: 0;
 }
@@ -134,9 +134,18 @@ hr {
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #608dfd;
 }
-.section-title {
+.section-contact {
+	margin-top: 150px;
 	margin-bottom: 70px;
 }
+.section-contact h2 {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	font-family: 'Amiri', serif;
+}
+
 .section-title h2 {
 	position: relative;
 	margin-top: 10px;
@@ -144,6 +153,7 @@ hr {
 	padding-bottom: 15px;
 	font-family: 'Amiri', serif;
 }
+
 .section-title h2::after {
 	position: absolute;
 	content: "";
@@ -154,6 +164,8 @@ hr {
 	margin-left: -30px;
 	left: 50%;
 }
+.section-
+
 .section-title p {
 	font-size: 18px;
 	color: black;
@@ -195,9 +207,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 /* Contact Section */
 
+
+.section-contact h3{
+	font-family: 'Amiri', serif;
+}
+
 #contact {
-	margin-top: 180px;
-	margin-bottom: 150px;
+	margin-top: 100px;
+	margin-bottom: 100px;
     padding: 50px 0 60px 0;
     background-color: #2a2a2a;
     color: black;
@@ -216,6 +233,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
+
 #contact .section-title h2::after {
 	position: absolute;
 	content: "";
