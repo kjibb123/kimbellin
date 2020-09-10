@@ -1,0 +1,261 @@
+*{margin:0; font-weight: normal;}
+p{margin-bottom: 10px;}
+body{
+    color:#333;
+    font-size: 100%;
+    font-family:sans-serif;
+}
+#weather_info{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color:white;
+    background: linear-gradient(#a0c0fb, #0e3fa1 )
+}
+h1{
+    margin-top: 20px;
+    font-size:50px;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+section{
+    overflow: hidden;
+    color:#fff;
+    text-shadow: 1px 1px 1px #999;
+    padding:10px 20px;
+    text-align: center;
+}
+section>.w_id{
+    text-align: center;
+}
+section>.temp{
+    text-align: center;
+    margin-top: 20px;
+}
+section>.temp{
+    font-size: 70px;
+}
+section > .feels_like{
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.time{
+    font-size: 30px;
+    margin-top: 40px;
+}
+.icon{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 140px;
+    margin-top: 80px;
+}
+.w_id{
+    font-size: 40px;
+    margin-top: 40px;
+}
+aside{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+aside>p{
+    font-size:1.8em;
+    text-align: center;
+    padding: 0 22px;
+}
+
+aside_2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+aside_2 > p{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0 16px;
+}
+/* 로딩이미지 */
+#weather_info .load img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display:none;
+}
+.other_weather{
+    display: flex;
+    text-align: center;
+}
+
+.humidity{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.wind{
+    font-size: 30px;
+    padding-top: 32px;
+}
+
+.wi-humidity{
+    font-size: 30px;
+    
+}
+.wi-strong-wind{
+    font-size: 30px;
+   
+}
+
+.hu_wind_info{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+.hum img{
+    width: 75px;
+}
+
+.win img{
+    width: 120px;
+    margin-top: 5px;
+}
+
+@media (max-width : 767px) {
+    body{
+        color:#333;
+        font-size: 100%;
+        font-family:sans-serif;
+    }
+    #weather_info{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        color:white;
+        background: linear-gradient(#a0c0fb, #0e3fa1 )
+    }
+    h1{
+        margin-top: 20px;
+        font-size:2.3em;
+        text-align: center;
+        opacity: 0.8;
+        font-weight: bold;
+    }
+    h3{
+        text-align: center;
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+    section{
+        overflow: hidden;
+        color:#fff;
+        text-shadow: 1px 1px 1px #999;
+        padding:10px 20px;
+        text-align: center;
+    }
+    section>.w_id{
+        text-align: center;
+    }
+    section>.temp{
+        text-align: center;
+        margin-top: 20px;
+    }
+    section>.temp{
+        font-size: 50px;
+    }
+    section > .feels_like{
+        font-size: 20px;
+    }
+    
+    .time{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .icon{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 120px;
+        margin-top: 60px;
+    }
+    .w_id{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    aside{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    aside>p{
+        font-size:1.8em;
+        text-align: center;
+        padding: 0 22px;
+    }
+    
+    aside_2{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    aside_2 > p{
+        font-size: 1.8em;
+        text-align: center;
+        padding: 0 16px;
+    }
+    /* 로딩이미지 */
+    #weather_info .load img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display:none;
+    }
+    .other_weather{
+        display: flex;
+        text-align: center;
+    }
+    
+    .humidity{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .wind{
+        font-size: 20px;
+        padding-top: 32px;
+    }
+    
+    .wi-humidity{
+        font-size: 30px;
+        
+    }
+    .wi-strong-wind{
+        font-size: 30px;
+       
+    }
+    
+    .hu_wind_info{
+        display: flex;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 30px;
+        justify-content: space-evenly;
+    }
+    .hum img{
+        width: 40px;
+    }
+    
+    .win img{
+        width: 60px;
+        margin-top: 5px;
+    }
+
+}

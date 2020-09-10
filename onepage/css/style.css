@@ -1,0 +1,1332 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans';
+}
+#section01{
+    width:100%; 
+    background: url(../images/main.png) top center no-repeat;}
+
+#section02{
+    display: flex;
+    width:100%; 
+    background: url(../images/page_2.png) no-repeat;
+}
+
+#section03{
+    position: relative; 
+    z-index: 1;
+    width:100%; 
+}
+	
+#section04{
+    width:100%;
+    height: 1080px;
+    background: url(../images/page_4.png) no-repeat;
+}
+	
+#section05{
+    width:100%;
+    height:1080px;
+}
+
+#section06{ 
+    width: 100%;
+    height: 1080px;
+}
+
+
+.menu_box{
+	width:100%; height:100px; color:#FFF; position:fixed; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; z-index: 999999;}
+	
+	.fixed{
+		background:rgba(0,0,0,0.5); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out;}
+	
+		.logo a{
+            font-size:46px; padding:15px 0 0 15px; float:left; color:#FFF; font-family:'Noto Sans KR', sans-serif; text-decoration:none;}
+            
+            .logo > a > img{
+                width: 72.44px;
+                height: 69.28px;
+            }
+            
+            .logo2{
+                display: none;
+            }
+
+            /* 로고 크기 지정 */
+            .menu_box{
+                width: 100%;
+                height: 100px;
+            }
+            .menuBtn{
+                display: none;
+            }
+            .menuNav{
+                float: right;
+                flex-direction: row;
+                justify-content: flex-end;
+                text-align: center;
+            }
+            .menuNav li{
+                width: 150px;
+                text-align: center;
+            }
+            .menuNav li a{
+                display: flex;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                line-height: 100px;
+                font-size: 15px;
+            }
+            
+            .logo_2{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .menuNav ul:after{
+                content: "";
+                display: flex;
+                clear: both;
+            }
+            /* 중앙 폰트로고 가운데 정렬 지정 */
+            .logo_2 > img{
+                animation-name: push;
+                animation-duration: 3s ;
+            }
+            /* 중앙 폰트로고 애니메이션 이름 지정 */
+            
+            @keyframes push{
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            /* 중앙 폰트로고 opacity 효과 */
+
+	
+                    
+
+					/**메뉴부분 마우스 오버시 색상 **/
+						
+                        /* main화면 */
+    .content01{
+        display: flex;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 2.2em;
+    }
+    /* section02 문구 */
+    .box1{
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.8);
+        width: 40%;
+        height: 1080px;
+    }
+    /* section02 opacity 박스 */
+    .box2{
+        display: flex;
+        background-color: none;
+        width: 10%;
+        height: 1080px;
+    }
+    /* 박스 구분 */
+    .box3{
+        width: 50%;
+        height: 1080px;
+    }
+    /* 박스 구분 */
+
+    /* section02 end */
+    .sec03-container a{
+        text-decoration: none;
+        color: black;
+    }
+    .box4, .box5, .box6{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-size: 25px;
+        border-bottom: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        box-sizing: border-box;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    /* section03 지혜의숲박스 */
+    /* section03 지지향박스 */
+    /* section03 나인블럭박스 */
+
+.sec03-slider{
+        width: 75%;
+        height: 1080px;
+        position: absolute;
+        left: 25%;
+}
+/* 슬라이드와 선택박스 부모요소 */
+.container{
+    width: 100%;
+    display: flex;
+}
+/* 지혜의숲, 지지향, 나인블럭 선택 박스 부모요소 */
+.sec03-container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+/* 지혜의 숲, 지지향, 나인블럭 선택박스 */
+
+.box7,.box8,.box9{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1080px;
+}
+/* 슬라이드 박스 위치조정 */
+.box8,.box9{
+    opacity: 0;
+}
+/* 슬라이드 첫화면 지혜의 숲 나오게 box8,box9 가리기 */
+
+.slide1{
+    background: url('../images/photo_1.png') center;
+}
+.slide1_1{
+    position: absolute;
+    color: white;
+    background: rgba(0,0,0,0.8);
+    width: 30%;
+    height: 1080px;
+    left: 60%;
+}
+    /* 지혜의 숲 텍스트 박스와 오퍼시티 */
+.slide1_txt1{
+    position: absolute;
+    font-size: 30px;
+    top: 30%;
+    right: 35%;
+}
+    /* 지혜의 숲 타이틀 박스 */
+.slide1_txt2{
+    text-align: left;
+    position: absolute;
+    font-size: 18px;
+    line-height: 2.3em;
+    top: 40%;
+    padding: 0 40px 0 40px;
+}
+    /* 지혜의 숲 텍스트 박스 */
+.slide2{
+    background: url('../images/photo_2.png') center no-repeat;
+}
+.slide3{
+    background: url('../images/photo_3.png') center no-repeat;
+}
+.slide4{
+    background: url('../images/photo_4.png') center no-repeat; 
+}
+.slide5{
+    background: url('../images/photo_5.png') center no-repeat;
+}
+    /* section03 지혜의 숲 슬라이드박스 */
+
+.slide6{
+    background: url('../images/photo_6.png') center;
+}
+
+.slide6_1{
+    position: absolute;
+    color: white;
+    background: rgba(0,0,0,0.8);
+    width: 30%;
+    height: 1080px;
+    left: 60%;
+}
+    /* 지지향 텍스트 박스와 오퍼시티 */
+.slide6_txt1{
+    position: absolute;
+    font-size: 30px;
+    top: 30%;
+    right: 40%;
+}
+    /* 지지향 타이틀 박스 */
+.slide6_txt2{
+    text-align: left;
+    position: absolute;
+    font-size: 18px;
+    line-height: 2.1em;
+    top: 40%;
+    padding: 0 40px 0 40px;
+}
+    /* 지지향 텍스트 박스 */
+
+.slide7{
+    background: url('../images/photo_7.png');
+}
+
+.slide8{
+    background: url('../images/photo_8.png');
+}
+
+.slide9{
+    background: url('../images/photo_9.png');
+}
+/* 지지향 슬라이드 사진들 */
+
+.slide10{
+    background: url('../images/photo_10.png');
+}
+
+.slide11{
+    background: url('../images/photo_11.png');
+}
+
+.slide12{
+    background: url('../images/photo_12.png');
+}
+    .swiper-container {
+        width: 100%;
+        height: 100%;;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+ 
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        position: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .page4{
+          width: 100%;
+          display: flex;
+          position: absolute;
+      }
+      
+      .page4_opacity{
+          height: 1080px;
+          width: 100%;
+          background-color: rgba(0,0,0,0.8);
+      }
+      .title4{
+          width: 100%;
+          height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          padding-top: 60px;
+          color: white;
+          font-weight: bold;
+          font-family: 'Noto Sans KR', sans-serif;
+      }
+      .title4 h2{
+          font-size: 36px;
+      }
+      .title4 h1{
+          font-size: 60px;
+      }
+      .main4{
+          display: flex;
+          width: 100%;
+      }
+      .main4_left, .main4_right{
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          height: 700px;
+      }
+      .main4_left1, .main4_right1{
+        padding-top: 40px;
+        text-align: center;
+      }
+      .main4_left1 h1, .main4_right1 h1{
+          font-size: 32px;
+          color: white;
+      }
+      .main4 p{
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+      }
+      .main4_left p{
+        padding-top: 60px;
+          padding-left: 180px;
+          padding-right: 180px;
+      }
+      .main4_right p{
+          padding-top: 80px;
+          padding-right: 180px;
+          padding-left: 180px;
+      }
+      .bottom4{
+          text-align: center;
+          width: 100%;
+          height: 120px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .bottombutton{
+          width: 200px;
+          height: 72px;
+          display: flex;
+          cursor: pointer;
+          border: 2px solid #fff;
+          border-radius: 5px 5px 5px 5px;
+      }
+     
+    .clickbutton{
+        width: 20px;
+        height: 36px;
+        padding: 20px 0 0 20px;
+
+    }
+    .bottom4 h1{
+        padding-left: 30px;
+        color: white;
+    }
+
+    .page4_photobox{
+        width:100%;
+        height: 1080px;
+        background: url(../images/page_4.png);
+        display: none;
+    }
+    .photobox_title{
+        display: flex;
+        width: 100%;
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.8);
+    }
+    .photobox_title h1{
+        justify-content: center;
+        color: white;
+        font-size: 36px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .photobox_close{
+        position: absolute;
+        right: 0;
+        width: 80px;
+        height: 90px;
+    }
+    .photobox_close img{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .photobox_close img:hover{
+        opacity: 0.8;;
+    }
+    .page4_photo{
+        position: relative;
+        width: 100%;
+        height: 990px;
+        background-color: rgba(0,0,0,0.8)
+    }
+    #photo1, #photo2, #photo3, #photo4, #photo5, #photo6, #photo7, #photo8, #photo9{
+        float: left;
+        width: 33.3%;
+        height: 330px;
+    }
+    .page4_photo > .photo_4 > img{
+        margin-left: 5px;
+    }
+
+    #myImg, #myImg2, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9 {
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        height: 310px;
+      }
+    #myImg:hover{opacity: 0.7;}
+    #myImg2:hover {opacity: 0.7;}
+    #myImg3:hover {opacity: 0.7;}
+    #myImg4:hover {opacity: 0.7;}
+    #myImg5:hover {opacity: 0.7;}
+    #myImg6:hover {opacity: 0.7;}
+    #myImg7:hover {opacity: 0.7;}
+    #myImg8:hover {opacity: 0.7;}
+    #myImg9:hover {opacity: 0.7;}
+      
+      /* The Modal (background) */
+      .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+      }
+      
+      /* Modal Content (image) */
+      .modal-content, .modal-content2, .modal-content3, .modal-content4, .modal-content5, .modal-content6, .modal-content7, .modal-content8, .modal-content9 {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1200px;
+      }
+      /* Caption of Modal Image */
+      #caption, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9 {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+      
+      /* Add Animation */
+      .modal-content, #caption, .modal-content2, #caption2, .modal-content3, #caption3, .modal-content4, #caption4, .modal-content5, #caption5, .modal-content6, #caption6,.modal-content7, #caption7, .modal-content8, #caption8, .modal-content9, #caption9 {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+      }
+      
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+      
+      /* The Close Button */
+      .close, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9 {
+        position: absolute;
+        top: 90px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .page4_photobox span:hover, .page4_photobox span:focus{
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+      }
+
+      .other{
+          width: 100%;
+          height: 1080px;
+          display: flex;
+      }
+      .other1{
+          display: flex;
+          width: 50%;
+          height: 1080px;
+          background:url(../images/other_1.png);
+      }
+      .other2{
+        display: flex;
+        flex-direction: column;
+          width: 50%;
+          height: 1080px;
+          background-color: saddlebrown;
+      }
+      .other2_1, .other2_2, .other2_3{
+          width: 100%;
+          height: 360px;
+          background-color: white;
+          display: flex;
+      }
+
+      .other2_1_1, .other2_2_2, .other2_3_1{
+          display: flex;
+          width: 50%;
+          height: 360px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+      }
+
+      .other2_1_1 h1, .other2_2_2 h1, .other2_3_1 h1{
+        font-family: 'Noto Sans KR', sans-serif;
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .other2_1_2{
+          display: flex;
+          width: 50%;
+          height: 360px;
+          background: url(../images/other_2.png) center no-repeat;
+          border-radius: 10px;
+      }
+
+      .other2_2_1{
+          display: flex;
+          width: 50%;
+          height: 360px;
+          background : url(../images/other_3.png) center no-repeat;
+          border-radius: 10px;
+      }
+
+      .other2_3_2{
+        display: flex;
+        width: 50%;
+        height: 360px;
+        background : url(../images/other_4.png) center no-repeat;
+        border-radius: 10px;
+    }
+    /* section05 */
+
+    .trafficbox{
+        display: flex;
+        width: 100%;
+        height: 580px;
+    }
+    .wisdombox, .letterbox, .museumbox, .busbox{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wisdombox h1{
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #FC0;
+    }
+    .wisdombox p{
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: bold;
+        color: #FC0;
+    }
+    
+    .letterbox h1{
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: rgba(0,0,0,0.9);
+    }
+    .letterbox p{
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: rgba(0,0,0,0.9);
+    }
+    
+    .museumbox h1{
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #3766b4;
+    }
+    .museumbox p{
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #3766b4;
+        font-weight: bold;
+    }
+    .busbox{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    .busbox h1{
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    
+    .buscontent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buscontent p{
+        font-size: 20px;
+        display: flex;
+        line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #map{
+        width: 100%;
+        height: 500px;
+    }
+
+@media(max-width: 1020px)
+{
+    .logo_2 > img{
+        width: 80%;
+    }
+    .content01{
+        font-size: 20px;
+    }
+    
+}
+@media(max-width:1640px){
+    .title4{
+        height: 100px;
+        padding-top: 20px;
+    }
+    .title4 h1{
+        font-size: 30px;
+    }
+    .title4 h2{
+        font-size: 24px;
+    }
+    .main4{
+        height: 500px;
+    }
+    .main4_left{
+        height: 350px;
+        padding-top: 100px;
+    }
+    .main4_right{
+        height: 350px;
+        padding-top: 100px;
+    }
+    .main4_left1{
+        padding-top: 0;
+    }
+    .main4_left1 h1{
+        font-size: 18px;
+    }
+    .main4_left p{
+        font-size: 18px;
+        line-height: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main4_right1{
+        padding-top: 0;
+    }
+    .main4_right1 h1{
+        font-size: 18px;
+    }
+    .main4_right p{
+        font-size: 18px;
+        line-height: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bottom4{
+        padding-top: 250px;
+    }
+}
+@media(max-width:768px){
+    .slide6_txt2{
+        line-height:1.6em;
+        top:25%;
+        padding: 0 20px;
+    }
+    .slide6_txt1{
+        top:15%;
+        right: 30%;
+    }
+    .slide1_txt1{
+        top:25%;
+        right:15%;
+    }
+    .slide1_txt2{
+        line-height: 1.6em;
+        top: 30%;
+        padding: 0 20px;
+    }
+    .menuNav li{
+        width: 120px;
+    }
+}
+@media(max-width:767px){
+    #section01{
+        height: 767px;
+    }
+    /* 1페이지 높이값 조정 */
+    #section02{
+        height: 767px;
+        background: url(../images/page_2_1.png);
+    }
+
+    /* 2페이지 높이값 조정 */
+    #section03{
+        height: 767px;
+    }
+    /* 3페이지 높이값 조정 */
+    .container{
+        height: 767px;
+    }
+    .sec03-container{
+        width: 100%;
+        height: 767px;
+    }
+    /* /지혜의 숲 전체 박스 */
+    .sec03-slider{
+        width: 100%;
+        height: 667px;
+        top: 100px;
+        right: auto;
+        left: auto;
+    }
+    /* 지혜의 숲 슬라이더 전체박스 */
+    .slide1{
+        background-size: 767px 667px;
+    }
+    /* 슬라이드 크기 조정 */
+
+    .slide1_1{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 667px;
+    }
+    .slide1_txt1{
+        top: 20%;
+    }
+    .slide1_txt2{
+        top: 30%;
+    }
+    /* 지혜의 숲 설명 화면에 텍스트 박스 100%로 채우기 */
+    
+    /* 작아졌을때 리스트 사라짐 */
+    
+    
+    /* 버튼메뉴 줄간격 */
+   
+    /* 기존 리스트 패딩 값 삭제 */
+    
+    /* 메뉴와 아이콘 fixed opacity 크기 */
+    /* icon 나타내기 */
+    .logo > a > img{
+        width: 56.45px;
+        height: 53.98px;
+    }
+    /* 로고크기 조정 */
+    .logo > a {
+        padding: 10px 0 0 10px;
+    }
+    /* 글씨 패딩 */
+    .logo_2 > img{
+        width: 80%;
+    }
+    /* 가운데 로고 크기 조정 */
+    .box1{
+        width: 100%;  
+        height: 767px; 
+    }
+    .box2{
+        width: 0;
+    }
+    .box3{
+        width: 0;
+    }
+    /* flex 이용한 공간 없애고 텍스트박스 100%처리 하여 화면 채우기 */
+    .content01{
+        font-size: 20px;
+    }
+    /* section02 글자 크기 변경 */
+    .box4,.box5,.box6{
+        height: 100px;
+        font-size: 16px;
+    }
+    /* 선택박스 크기와 글자 크기 바꾸기 */
+    .sec03-container{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+    /* 선택박스 위에서 가로로 넣기 */
+    .box7,.box8,.box9{
+        height: 667px;
+    }
+    /* 슬라이드 박스 높이 */
+    .slide2{
+        background: url('../images/photo_2_1.png') no-repeat;
+    }
+    .slide3{
+        background: url('../images/photo_3_1.png') no-repeat;
+    }
+    .slide4{
+        background: url('../images/photo_4_1.png') no-repeat;
+    }
+    .slide5{
+        background: url('../images/photo_5_1.png') no-repeat;
+    }
+    /* 지혜의 숲 배경 크기 줄여서 넣기 */
+
+    .slide6_1{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 667px;
+    }
+    .slide6_txt1{
+        top: 20%;
+    }
+    .slide6_txt2{
+        top: 30%;
+    }
+    /* 지지향 설명 화면에 텍스트 박스 100%로 채우기 */
+    
+    .slide6{
+        background: url('../images/photo_6_1.png') no-repeat;
+    }
+    .slide7{
+        background: url('../images/photo_7_1.png') no-repeat;
+    }
+    .slide8{
+        background: url('../images/photo_8_1.png') no-repeat;
+    }
+    .slide9{
+        background: url('../images/photo_9_1.png') no-repeat;
+    }
+    /* 지지향 슬라이드 배경 크기 줄여서 넣기 */
+
+    .slide10{
+        background: url('../images/photo_10_1.png') no-repeat;
+    }
+    .slide11{
+        background: url('../images/photo_11_1.png') no-repeat;
+    }
+    .slide12{
+        background: url('../images/photo_12_1.png') no-repeat;
+    }
+    .menu_box{
+        width: 100%;
+        height: 76px;
+        background-color: white;
+    }
+    .menuNav{
+        margin-top: 8px;
+        width: 100%;
+        display: none;
+    }
+    .menuNav li a{
+        width: 100%;
+        line-height: 40px;
+        padding-left: 20px;
+        color: black;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    .menuNav li a:hover{
+        color: #FC0;
+    }
+    .menuNav li{
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .menuBtn{
+        height: 45px;
+        display: block;
+        float: right;
+        margin: 15px 15px 0 0;
+    }
+
+    .menuBtn:focus{
+        outline: none;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2 > a > img{
+        width: 56.45px;
+        height: 53.98px;
+    }
+    /* 로고크기 조정 */
+    .logo2 > a {
+        padding: 10px 0 0 10px;
+    }
+    .logo2{
+        position: absolute;
+        display: block;
+        padding:10px 0 0 0;
+    }
+
+    /* 토글버튼 글자 숨기기 */
+    #section04{
+        height: 767px;
+    }
+    .page4_opacity{
+        height: 767px;
+    }
+    .title4{
+        height: 100px;
+        padding-top: 20px;
+    }
+    .title4 h1{
+        font-size: 30px;
+    }
+    .title4 h2{
+        font-size: 24px;
+    }
+    .main4{
+        height: 500px;
+    }
+    .main4_left{
+        height: 350px;
+    }
+    .main4_right{
+        height: 350px;
+    }
+    .main4_left1{
+        padding-top: 0;
+    }
+    .main4_left1 h1{
+        font-size: 20px;
+    }
+    .main4_left p{
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main4_right1{
+        padding-top: 0;
+    }
+    .main4_right1 h1{
+        font-size: 20px;
+    }
+    .main4_right p{
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .page4_photobox{
+        height: 767px;
+    }
+    .photo_4{
+        height: 200px;
+    }
+    #myImg{
+        height: 150px;
+    }
+    #myImg2{
+        height: 150px;
+    }
+    #myImg3{
+        height: 150px;
+    }
+    #myImg4{
+        height: 150px;
+        margin-top: 20px;
+    }
+    #myImg5{
+        height: 150px;
+        margin-top: 20px;
+    }
+    #myImg6{
+        height: 150px;
+        margin-top: 20px;
+    }
+    #myImg7{
+        height: 150px;
+        margin-top: 20px;
+    }
+    #myImg8{
+        height: 150px;
+        margin-top: 20px;
+    }
+    #myImg9{
+        height: 150px;
+        margin-top: 20px;
+    }
+    #photo1{
+        width: 110px;
+        margin-left: 5px;
+        height: 150px;
+        padding-top: 50px;
+    }
+    #photo1 > img{
+        margin-left: 0;
+    }
+    #photo2{
+        width: 110px;
+        margin-left: 10px;
+        height: 150px;
+        padding-top: 50px
+    }
+    #photo2 > img{
+        margin-left: 0;
+    }
+    #photo3{
+        width: 110px;
+        margin-left: 10px;
+        margin-right: 5px;
+        height: 150px;
+        padding-top: 50px
+    }
+    #photo3 > img{
+        margin-left: 0;
+    }
+    #photo4{
+        width: 110px;
+        margin-left: 5px;
+        height: 150px;
+    }
+    #photo4 > img{
+        margin-left: 0;
+    }
+    #photo5{
+        width: 110px;
+        margin-left: 10px;
+        height: 150px;
+    }
+    #photo5 > img{
+        margin-left: 0;
+    }
+    #photo6{
+        width: 110px;
+        margin-left: 10px;
+        margin-right: 5px;
+        height: 150px;
+    }
+    #photo6 > img{
+        margin-left: 0;
+    }
+    #photo7{
+        margin-top: 20px;
+        width: 110px;
+        margin-left: 5px;
+        height: 150px;
+    }
+    #photo7 > img{
+        margin-left: 0;
+    }
+    #photo8{
+        margin-top: 20px;
+        width: 110px;
+        margin-left: 10px;
+        height: 150px;
+    }
+    #photo8 > img{
+        margin-left: 0;
+    }
+    #photo9{
+        width: 110px;
+        margin-left: 10px;
+        margin-right: 5px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    #photo9 > img{
+        margin-left: 0;
+    }
+    .page4_photo{
+        height: 677px;
+    }
+    #section05{
+        height: 767px;
+    }
+    .other1{
+        height: 767px;
+        background: url(../images/other_1_1.png) center no-repeat;
+    }
+    .other2{
+        height: 767px;
+    }
+    .other2_1{
+        height: 255.6px;
+    }
+    .other2_2{
+        height: 255.6px;
+    }
+    .other2_3{
+        height: 255.6px;
+    }
+    .other2_1_1{
+        height: 255.6px;
+    }
+    .other2_1_2{
+        height: 255.6px;
+        background: url(../images/other_2_1.png) center no-repeat;
+    }
+    .other2_2_1{
+        height: 255.6px;
+        background: url(../images/other_3_1.png) center no-repeat;
+    }
+    .other2_2_2{
+        height: 255.6px;
+    }
+    .other2_3_1{
+        height: 255.6px;
+    }
+    .other2_3_2{
+        height: 255.6px;
+        background: url(../images/other_4_1.png) center no-repeat;
+    }
+    .other2 h1{
+        font-size: 12px;
+    }
+    #section06{
+        height: 767px;
+    }
+    #map{
+        width: 100%;
+        height: 300px;
+    }
+    .wisdombox h1{
+        font-size: 20px;
+    }
+    .wisdombox p{
+        font-size: 12px;
+    }
+    .letterbox h1{
+        font-size: 20px;
+    }
+    .letterbox p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .museumbox h1{
+        font-size: 20px;
+    }
+    .museumbox p{
+        font-size: 10px;
+        line-height: 24px;
+    }
+    
+    .busimg{
+        height: 40%;
+    }
+    .busimg img{
+        width: 71px;
+        height: 80px;
+    }
+    .buscontent h1{
+        font-size: 20px;
+    }
+    .buscontent p{
+        font-size: 11px;
+        line-height: 24px;
+    }
+    .trafficbox{
+        flex-wrap: wrap;
+    }
+    .wisdombox{
+        width: 50%;
+        height: 50%;
+    }
+    .letterbox{
+        width: 50%;
+        height: 50%;
+    }
+    .museumbox{
+        width: 50%;
+        height: 50%;
+    }
+    .busbox{
+        width: 50%;
+        height: 50%;
+    }
+    .slide6_txt1{
+        right: 40%;
+    }
+    .slide1_txt1{
+        right: 30%;
+    }
+    .photobox_close img{
+        width: 20px;
+        left: 30px;
+        height: 25px;
+    }
+    #img01, #img02, #img03, #img04, #img05, #img06, #img07, #img08, #img09{
+        padding-top: 150px;
+    }
+    .bottom4{
+        padding-top: 0;
+    }
+    .main4_left{
+        padding-top: 50px;
+    }
+    .main4_right{
+        padding-top: 50px;
+    }
+}
+@media(min-width:768px){
+    .menuBtn{
+        display: none;
+    }
+    /* 네비게이션 */
+    .menuNav{
+        /* !important는 지정한 스타일의 속성이 중요하기 때문에 변경을 막기위해 지정한다. */
+        display: block !important;
+        float: right;
+    }
+    .menuNav li{
+        float: left;
+    }
+    .menuNav li a{
+        margin-left: 40px;
+    }
+    #a01{
+        margin-left:60px;
+    }
+    
+}
+    

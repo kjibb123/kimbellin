@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="ogimage.png" />
+    <meta property="og:description" content="간단하게 날씨 좀 봅시다"/>
+    <meta property="og:title" content="날씨 확인하기" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <title>WeatherApp</title>
+</head>
+<body>
+
+    <div id="weather_info">
+        
+        <section>
+            <h1 class="city"></h1>
+            <h3 class="time" id="time"></h3>
+            
+            <i class="icon wi"></i>
+            
+            <p class="w_id"></p>
+            <p class="temp"></p>
+            <p class="feels_like"></p>
+            <aside_2>
+                <p>max</p>
+                <p>min</p>
+            </aside_2>
+            <aside>
+                <p class="temp_max">max</p>
+                <p class="temp_min">min</p>
+            </aside>
+            <div class="hu_wind_info">
+                <div class="hum">
+                    <img src="humi.png" alt="">
+                    <p class="humidity"></p>
+                </div>
+                <div class="win">
+                    <img src="wind.png" alt="">
+                    <p class="wind" id="wind">풍향</p>
+                </div>
+            </div>
+                
+        </section>
+        <img class="load_img" src="" width="50">
+    </div>
+
+    <script>
+        var url='https://api.openweathermap.org/data/2.5/weather?q=incheon,KR&appid=2c1da9cd69b77003d7e4d5cfe6ff00ff';
+
+       
+        $('weather_info .load_img').show();
+
+        $.getJSON(url, function(data) {
+            var sys = data.sys;                 // 국가명, 일출/일몰
+            var wind = data.wind.deg;           // 풍향
+            var rain = data.rain;
+            var city = data.name;               // 도시명
+            var weather = data.weather;         // 날씨 객체
+            var main = data.main;               // 온도 기압 관련 객체
+            var wmain = weather[0].main;        // 구름 상태(Cloudiness)
+            var w_id = weather[0].id;           // 날씨상태 id 코드
+            var icon = weather[0].icon;         // 날씨 아이콘 정보
+            var country = sys.country;          // 국가명
+            var temp = main.temp;               // 현재 온도
+            var temp_min = main.temp_min;       // 최저 온도
+            var temp_max = main.temp_max;       // 최고 온도
+            var feels_like = main.feels_like;
+            var icon_url = 'https://openweathermap.org/img/w/' + icon;
+            var humidity = main.humidity;
+
+            function time(){
+            var today = new Date();
+            var yy = today.getFullYear();
+            var mm = today.getMonth();
+            var dd = today.getDay();
+            var hh = today.getHours();
+            var mi = today.getMinutes();
+            var ss = today.getSeconds();
+
+            document.getElementById("time").innerHTML = yy + "/" + mm + "/" +  dd + " " + hh + ":" + mi + ":" +  ss;
+
+            }
+            setInterval(time, 1000);
+
+            
+            // 날씨아이콘 바꾸기 코드
+            var nowTimestamp = Math.floor(Date.now() / 1000);
+
+
+            var weatherClass = 'wi wi-owm-';
+                weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
+                weatherClass += ('-' + weather[0].id);
+
+            $("#weather_info .icon").addClass(weatherClass);
+            // 날씨 아이콘 바꾸기 코드 끝
+
+            $('#weather_info .city').html(city + "/" + country);
+            // $('#weather_info .icon').html("<img src='" + icon_url + ".png'>");
+            $('#weather_info .w_id').html(wmain);
+            $('#weather_info .temp_min').html(parseInt(temp_min-273.15)+'&deg');
+            $('#weather_info .temp_max').html(parseInt(temp_max-273.15)+'&deg');
+            $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;');
+            $('#weather_info .feels_like').html('체감온도 ' + parseInt(feels_like-273.15)+'&deg;');
+            $('#weather_info .load_img').hide();
+            $('#weather_info .humidity').html('습도 ' + parseInt(humidity));
+            // $('#weather_info .time').html = yy + "/" + mm + "/" +  dd + " " + hh + ":" + mi + ":" +  ss;
+            
+
+            if(wind > 0 && wind < 90){
+                $('#weather_info .wind').html("바람 : 북동풍");
+            }else if(wind > 90 && wind < 180 ){
+                $('#weather_info .wind').html("바람 : 남동풍");
+            }else if(wind > 180 && wind < 270) {
+                $('#weather_info .wind').html("바람 : 남서풍");
+            }else if(wind > 270 && wind < 360){
+                $('#weather_info .wind').html("바람 : 북서풍");
+            }else if(wind == 0){
+                $('#weather_info .wind').html("바람 : 북풍");
+            }else if(wind == 90){
+                $('#weather_info .wind').html("바람 : 동풍");
+            }else if(wind == 180){
+                $('#weather_info .wind').html("바람 : 남풍");
+            }else if(wind == 270){
+                $('#weather_info .wind').html("바람 : 서풍");
+            }else{
+                $('#weather_info .wind').html("바람이 없습니다.");
+            }
+
+            
+        })
+
+    
+        .fail(function(){
+            alert("loading error");
+        });
+
+        
+        
+    </script>
+</body>
+</html>
