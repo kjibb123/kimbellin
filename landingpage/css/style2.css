@@ -1,0 +1,393 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body{
+    font-family: 'Nanum Gothic';
+    background: linear-gradient(#090d16, #233444);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    margin-top: 10px;
+}
+header img{
+    width: 100px;
+}
+.subtitle{
+    padding-top: 50px;
+}
+.subtitle h2{
+    color: white;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title img{
+    
+    width: 100%;
+}
+
+.video{
+    margin-top: 100px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+    /* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+    padding-top: 25px;
+    height: 0;
+    }
+    
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
+.text-1 h2{
+    font-size: 36px;
+    color: white;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.boxes{
+    padding-top: 100px;
+}
+.box-0{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-1, .box-2, .box-3{
+    width: 500px;
+    height: 150px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    
+}
+.box-1-1,.box-2-1,.box-3-1{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-1-2,.box-2-2,.box-3-2{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-0 p{
+    color: white;
+    font-size: 26px;
+}
+.box-0 img{
+    width: 100px;
+    height: 100px;
+}
+.eventstart{
+    padding-top: 200px;
+}
+.event-1, .event-2{
+    color: white;
+    font-size: 34px;
+}
+
+.event-1 h1, .event-2 h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.event-1 h2{
+    line-height: 50px;
+    padding-top: 50px;
+}
+.yellow{
+    color: #d1ad66;
+}
+.red{
+    color: #e42313;
+}
+
+.event-2{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.event-2-1{
+    border: 1px solid #fff;
+}
+.event-2-1 h1{
+    color: white;
+    font-weight: bold;
+    padding: 30px 0;
+    font-size: 46px;
+}
+.event-2-1 h2{
+    color: white;
+    font-size: 36px;
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+.answer{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.answer-1, .answer-2{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.answer h2{
+    color: white;
+    font-size: 36px;
+}
+
+.eventmiddle{
+    padding-top: 150px;
+}
+.event-m h2{
+    color: white;
+    font-size: 38px;
+    line-height: 80px;
+}
+.event-m h1{
+    padding-top: 50px;
+    color: white;
+    font-size: 46px;
+}
+
+.event-photo{
+    padding-top: 100px;
+}
+.event-photo img{
+    width: 80%;
+}
+
+.event-end{
+    padding-top: 150px;
+}
+
+.gift{
+    background-color: white;
+    padding: 50px 100px;
+}
+
+.gift-1{
+    display: flex;
+    flex-direction: column;
+}
+.gift1,.gift2,.gift3{
+    display: flex;
+}
+.gift-1 h3{
+    padding-left: 100px;
+}
+.gift-1 h2{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    padding-left: 50px;
+    color: black;
+}
+.gift-1 h3{
+    font-size: 40px;
+    line-height: 67.5px;
+    color: black;
+}
+.gift-3{
+    display: flex;
+    justify-content: center;
+}
+
+.gift-3 img{
+    width: 40%;
+    
+}
+
+.warning{
+    background: url(../img/last-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.warning-text{
+    padding-top: 100px;
+    padding-left: 100px;
+    
+}
+.warning-text h1{
+    padding-bottom: 100px;
+    color: white;
+    font-size: 60px;
+}
+
+.warning-text h2{
+    padding: 10px 0;
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 1680px){
+    .gift{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gift1,.gift2,.gift3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .gift-1 h2, .gift-1 h3{
+        padding-left: 0;
+    }
+    .gift-3{
+        padding-top: 100px;
+    }
+    .gift-3 img{
+        width: 60%;
+    }
+    .warning-text h1{
+        font-size: 50px;
+    }
+    .warning-text h2{
+        font-size: 34px;
+    }
+    
+}
+
+@media (max-width:1284px){
+    .answer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .answer-1, .answer-2{
+        width: 100%;
+    }
+    
+    .warning-text h1{
+        font-size: 40px;
+    }
+    .warning-text h2{
+        font-size: 28px;
+    }
+    .warning-text{
+        padding-left: 100px;
+    }
+    
+}
+
+
+@media (max-width:992px) {
+    .boxes{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box-0{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-1, .box-2, .box-3{
+        margin-bottom: 20px;
+    }
+    .event-1 h2{
+        font-size: 24px;
+    }
+    .event-2-1 h1, .event-2-1 h2{
+        font-size: 26px;
+    }
+    .answer h2{
+        font-size: 24px;
+    }
+    .event-m h2{
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .event-m h1{
+        font-size: 36px;
+    }
+    .gift-1 h2, .gift-1 h3{
+        font-size: 28px;
+    }
+    .warning-text{
+        padding-left: 50px;
+    }
+    .warning-text h1{
+        font-size: 36px;
+    }
+    .warning-text h2{
+        font-size: 22px;
+    }
+}
+
+@media (max-width:768px){
+    .subtitle h2{
+        font-size: 20px;
+    }
+    .boxes{
+        padding-top: 50px;
+    }
+    .text-1 h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .event-1 h1, .event-2 h1{
+        font-size: 50px;
+    }
+    .event-m h1{
+        font-size: 32px;
+    }
+}
+
+@media (max-width:550px){
+    .box-1, .box-2, .box-3{
+        width: 300px;
+        height: 100px;
+    }
+    .box-0{
+        padding-top: 100px;
+    }
+    .box-0 p{
+        color: white;
+        font-size: 18px;
+    }
+    .box-0 img{
+        width: 70px;
+        height: 70px;
+    }.eventstart{
+        padding-top: 100px;
+    }
+    .event-2{
+        padding-top: 100px;
+    }
+    .event-m h2{
+        color: white;
+        font-size: 22px;
+    }
+    .event-m h1{
+        font-size: 28px;
+    }
+}

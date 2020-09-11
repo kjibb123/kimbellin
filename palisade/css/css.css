@@ -1,0 +1,1669 @@
+@font-face { font-family: 'Arita-buri-SemiBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+section{
+    height: 100vh;
+}
+
+.main-bg{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/PE1-1.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.text h1{
+    margin: 0 !important;
+    font-family: 'Arita-buri-SemiBold';
+}
+
+.brand-logo{
+    width: 100%;
+    text-align: center;
+    
+}
+.brand-logo img{
+    width: 10%;
+    padding-top: 3%;
+    
+}
+
+.row{
+    margin: 0 !important;
+}
+.main-txt-box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1{
+    color: white;
+    width: 100%;
+    font-size: 100px;
+}
+.car-design-title h1{
+    font-weight: bold;
+}
+
+.car-design-title h5{
+    padding: 0 !important;
+}
+.car-photo img{
+    width: 100%;
+}
+
+.car-photo{
+    padding-top: 2%;
+    position: relative;
+}
+.car-front{
+    position: relative;
+}
+.car-front-text{
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.car-back-text{
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.front-back{
+    margin-top: 40px;
+    position: relative;
+}
+.car-rel{
+    position: relative;
+}
+
+.car-front img{
+    position: relative;
+    max-width: 100%;
+}
+
+.car-back{
+    display: none;
+}
+
+.car-back img{
+    position: relative;
+    max-width: 100%;
+}
+
+
+.car-text-1{
+    margin-top: 2%;
+}
+
+
+.modal-footer{
+    padding-top: 30px;
+    text-align: left;
+}
+.modal-footer h4{
+    font-weight: bold;
+}
+
+.ex01,.ex02,.ex06,.ex07{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    margin-top: 20%;
+}
+
+.ex03,.ex04,.ex08{
+    margin: 0 auto;
+    width: 50% !important;
+    height: 60% !important;
+    background-color: white;
+    margin-top: 20%;
+}
+
+.ex05,.ex09{
+    margin: 0 auto;
+    width: 50% !important;
+    height: 55% !important;
+    background-color: white;
+    margin-top: 20%;
+}
+
+.modal-button{
+    text-align: right;
+}
+
+.ex02,.ex04,.ex07{
+    display: none;
+    
+}
+.button-2,.button-4{
+    margin-top: 50px;
+}
+
+.ex-photo img{
+    cursor: pointer;
+}
+
+
+.point .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 254, 254, 0.507);
+    /* rgba(0 , 171, 107, 0.12); 색상값! */
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    animation: record-lg 1.5s ease-in-out infinite;
+}
+
+@keyframes record-lg {
+	0% {
+		opacity: 0;
+		transform: scale(.5);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+
+.point .dot {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    background-color: white;
+    border-radius: 50%;
+    animation: dot-effec 1.5s ease-in-out infinite;
+}
+
+@keyframes dot-effec {
+	0% {
+		opacity: .5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .5;
+	}
+}
+
+
+.point.point-1 {
+    top: 47%;
+    left: 30%;
+}
+.point.point-2 {
+    top: 53%;
+    left: 53%;
+}
+.point.point-3 {
+    top: 67%;
+    left: 40%;
+}
+
+.point.point-4{
+    display: none;
+    top: 60%;
+    left: 35%;
+}
+
+.point.point-5{
+    display: none;
+    top: 47%;
+    left: 55%;
+}
+.point.point-6{
+    display: none;
+    top: 70%;
+    left: 67%;
+}
+
+.point {
+    position: absolute;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+.car-title h1{
+    padding-top: 4%;
+    font-weight: bold;
+}
+
+.car-titles p{
+    font-weight: bold;
+}
+
+.color-text>ul>li{
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin: 10px 15px;
+}
+
+.color-text>ul{
+    display: flex;
+    justify-content: center;
+}
+.color-text>ul>li{
+    cursor: pointer;
+}
+
+.text-content > ul >li{
+    list-style: none;
+}
+
+#white{
+    background-color: snow;
+}
+
+.white h1{
+    color: snow;
+}
+
+#moonlight{
+    background-color: #384e7a;
+}
+
+.moonlight h1{
+    color: #384e7a;
+}
+
+#burgundy{
+    background-color: #6e3d43;
+}
+
+.burgundy h1{
+    color: #6e3d43;
+}
+#steal{
+    background-color: #5d5f63;
+}
+
+.steal h1{
+    color: #5d5f63;
+}
+
+#black{
+    background-color: black;
+}
+
+#forest{
+    background-color: #55615f;
+}
+
+.forest h1{
+    color: #55615f;
+}
+
+.moonlight,.burgundy,.steal,.forest,.black{
+    display: none;
+}
+
+
+.car-img img{
+    width: 100%;
+}
+
+
+.color-text > ul{
+    padding: 0 !important;
+}
+
+.text-content > ul{
+    padding: 0 !important;
+}
+
+.color-text a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+
+.in-title{
+    height: 80px;
+}
+
+.in-title2{
+    padding-top: 2%;
+}
+.in-title2 h1{
+    font-weight: bold;
+}
+
+.in-second{
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+
+.in-padding{
+    padding: 0 !important;
+}
+
+.inner-color{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.in-text{
+    margin-top: 30px;
+}
+
+.in-text h4{
+    font-weight: bold;
+}
+
+.modal{
+    padding: 0 !important;
+    width: 100%;
+    
+    
+}
+.modal-body{
+    width: 100%;
+}
+
+.modal-header h4{
+    font-weight: bold;
+}
+
+.close{
+    width: 40px;
+    height: 40px;
+}
+
+
+section{
+    position: relative;
+}
+
+
+.modal-backdrop{
+    position: relative;
+}
+/* 슬라이드 css */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .inner img{
+      width: 70%;
+  }
+
+  .swiper-slide{
+      display: block;
+  }
+
+  
+ .swiper-wrapper{
+     position: relative;
+ }
+
+ .swiper-slide{
+     position: absolute;
+ }
+
+ .in-first{
+     margin-top: 40px;
+ }
+
+
+ .car-design1{
+     background-color: #5d5f63;
+     padding-bottom: 1%;
+ }
+
+ .car-design1 img{
+     width: 100%;
+     
+ }
+
+ .section02{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+ }
+ .car-design2{
+    background-color: #5d5f63;
+    padding: 2% 0;
+    color: white;
+    
+ }
+
+ .section03{
+     background-color: #ccc;
+     height: 100vh;
+ }
+
+
+.wheel-photo{
+    margin-top: 3%;
+}
+
+.wheel-photo img{
+    width: 90%;
+}
+
+.wheel-title{
+    padding-top: 3%;
+}
+.wheel-title h2{
+    font-weight: bold;
+}
+
+.wheel-photo h4{
+    padding-top: 2%;
+}
+
+.space{
+    padding-top: 2%;
+}
+
+.space-btn{
+    margin-top: 1%;
+}
+
+.space-title h1{
+    font-weight: bold;
+}
+
+.space-title h5{
+    padding-top: 1%;
+}
+
+.space-photo{
+    padding: 3% 0;
+}
+
+.space-photo-2{
+    padding: 8.5% 0;
+    display: none;
+}
+
+.space-in-photo img{
+    width: 100%;
+}
+
+.space-background{
+    width: 100%;
+    background-color: black;
+    margin-top: 1%;
+}
+.space-photo img{
+    width: 100%;
+}
+.space-in-photo2 img{
+    width: 100%;
+}
+
+
+.space-photo > .row > .col-sm-4:hover > img{
+    opacity: 50%;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.space-photo-2 > .row > .space-1 >.col-sm-3:hover > img{
+    opacity: 50%;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.space-photo-2 > .row > .space-2 >.col-sm-3:hover > img{
+    opacity: 50%;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.space-photo p, .space-photo-2 p{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 30%;
+    color: white;
+    
+}
+
+.in-4-images p{
+    position: absolute;
+    top: 50%;
+    left: 17%;
+}
+
+.in-7-images p{
+    top: 50%;
+    left: 18%;
+}
+
+.in-8-images p{
+    top: 50%;
+    left: 35%;
+}
+
+.space-padding{
+    padding-top: 3%;
+}
+
+.space-front-text{
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.space-back-text{
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    background-color: black;
+    color: white;
+}
+
+/* 섹션05 */
+.seat-flu{
+    padding-left: 0;
+    padding-right: 0;
+}
+.seat-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.seat-title{
+    padding-top: 3%;
+    
+}
+.seat-title h3{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.seat-button{
+    padding-top: 1%;
+}
+
+
+.seat-photo img{
+    width: 50%;
+}
+
+.seat-text{
+    background-color: #f6f3f2;
+    padding: 2% 0;
+}
+.seat-text-img img{
+    width: 100%;
+}
+
+.seat-text-1 h5{
+    padding-top: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.seat-empty{
+    width: 100%;
+    color: white;
+}
+
+.in-photo img{
+    width: 70%;
+}
+
+/* 섹션 07 */
+
+.cal{
+    padding-top: 3%;
+}
+
+.cal-photo{
+    padding-top: 10%;
+}
+
+.cal-photo img{
+    width: 100%;
+}
+
+.section07{
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f3f2;
+}
+
+.cal-1-text{
+    padding-top: 4%;
+}
+
+/* 섹션 08 */
+
+.vip h2{
+    padding-top: 5%;
+    font-weight: bold;
+}
+
+.vip-photo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vip-page{
+    padding-top: 5%;
+    position: relative;
+    display: flex;
+}
+.vip-2{
+    display: flex;
+    cursor: pointer;
+}
+
+.vip-photo-2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+.vip001 img{
+    width: 90%;
+}
+
+.vip002 img{
+    padding-top: 3%;
+    width: 90%;
+}
+
+
+.vip-1 img{
+    width: 100%;
+}
+
+.vip-2 img{
+    width: 100%;
+}
+
+
+.vip-2 img:hover{
+    opacity: 50%;
+}
+.ex10,.ex11,.ex12,.ex13,.ex14{
+    margin: 0 auto;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    margin-top: 8%;
+}
+
+/* 섹션 09 */
+.conv h2{
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.convs{
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.conv-photo1{
+    width: 60%;
+}
+
+.conv-photo1 img{
+    width: 100%;
+}
+
+.conv-photo1 h3{
+    padding-top: 2%;
+}
+.conv-photo2{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.conv-photo2 div{
+    display: flex;
+    height: 33%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.conv-photo3{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.conv-photo3 div{
+    display: flex;
+    height: 33.3%;
+    padding-bottom: 1%;
+}
+.conv-photo-3 img{
+    width: 100%;
+}
+
+.section09{
+    height: 100vh;
+    background-color: #f6f3f2;
+}
+
+/* 섹션10 */
+
+.section10 img{
+    width: 80%;
+}
+
+
+
+.conv-photo-4{
+    padding-top: 2%;
+}
+
+
+
+/* 섹션11 */
+
+.performance h1{
+    padding-top: 3%;
+    font-weight: bold;
+}
+.performance h3{
+    padding-top: 2%;
+    font-weight: bold;
+}
+
+.performance h4{
+    padding-top: 5%;
+}
+
+.perf-photo{
+    padding-top: 7%;
+}
+.perf-photo img{
+    width: 100%;
+}
+
+.conv-photo-6 img{
+    width: 80%;
+}
+
+.section11{
+    background-color: #eeeeee;
+}
+
+/* 섹션12 */
+
+.sp{
+    padding-top: 4%;
+}
+
+.speed{
+    padding-top: 5%;
+}
+.speed h1{
+    font-weight: bold;
+}
+
+.speed-left, .speed-right{
+    text-align: center;
+}
+
+.speed p{
+    padding-top:2%;
+}
+
+.speed-1,.speed-2,.speed-3,.speed-4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.speed-1,.speed-3{
+    border-bottom: 1px solid black;
+}
+
+.speed-2, .speed-4{
+    padding-top: 2%;
+}
+.memberCountCon, .memberCountCon2, .memberCountCon3, .memberCountCon4{
+    width: 25%;
+    font-size: 50px;
+    color: #376edb;
+    font-weight: bold;
+
+}
+.sp-1,.sp-2,.sp-3,.sp-4{
+    width: 25%;
+}
+
+.sp-1 h4{
+    margin: 0;
+}
+
+.speed-bottom{
+    padding-top: 5%;
+
+}
+.speed-bottom img{
+    width: 100%;
+}
+
+
+/* 섹션13 */
+
+.section13{
+    background-color: #f6f3f2;
+    overflow: hidden;
+}
+
+.hy{
+    padding-top: 5%;
+}
+
+.hy h1{
+    font-weight: bold;
+}
+.smart-photo{
+    padding-top: 10%;
+}
+
+.swiper-container1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+  }
+  .smart-1{
+      background-color: white;
+  }
+
+  .smart-1 img{
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .smart-1 p{
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .smart-1:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+  }
+
+
+  .swiper-pagination1{
+      padding-top: 5%;
+  }
+
+  .ex15, .ex16, .ex17, .ex18 .ex19, .ex20, .ex21,.ex22,.ex23,.ex24{
+    margin: 0 auto;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+    .modal-body video{
+        width: 100%;
+    }
+
+    .bottom-bg{
+        width: 100%;
+        height: 100vh;
+        background-color: #f6f3f2;
+    }
+
+    .customer{
+        display: flex;
+        background-color: white;
+        margin-top: 10%;
+        width:100%;
+        
+        
+    }
+    .cus-1,.cus-2{
+        width: 33.3%;
+        padding: 5%;
+    }
+    .cus-2 h4{
+        font-weight: bold;
+    }
+    .cus-3 h4{
+        color: teal;
+    }
+    .cus-3{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+    }
+    .cus-1 img{
+        width: 100%;
+    }
+
+    .ask{
+        display: flex;
+        background-color: white;
+        margin-top: 10%;
+        width: 100%;
+        
+
+    }
+    .ask-1{
+        width: 33.3%;
+        padding: 5%;
+    }
+    .ask-1 img{
+        width: 100%;
+    }
+
+    .ask-2{
+        width: 66.6%;
+        padding: 8%;
+    }
+    .ask-2 a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .customer-title h1{
+        font-weight: bold;
+        padding-top: 3%;
+    }
+
+    .footer-1{
+        background: url('../images/bottom-bg1.png');
+        background-position: center;
+    }
+    .footer-2{
+        background: url('../images/bottom-bg.jpg');
+        background-position: center;
+    }
+
+    .footer-3{
+        background: url('../images/S.png');
+        background-position: center;
+    }
+    .footer-1,.footer-2,.footer-3{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+    }
+    .footer-0 a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .footer-0:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .footer-0:hover>a{
+        color: white;
+    }
+
+    .footer{
+        width: 100%;
+        background-color: #222222;
+        padding-top: 2%;
+    }
+    .section14 > .bottom-bg > .container-fluid{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .bottoms{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+    }
+    .kji{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footer-menu{
+        width: 50%;
+    }    
+
+    .hy-1{
+        height: 15vh;
+    }
+    .hy-2{
+        height: 35vh;
+    }
+    .hy-3{
+        height: 30vh;
+    }
+    .hy-4{
+        height: 20vh;
+    }
+    
+
+@media(max-width:992px){
+    .seat-text-1 h5{
+      padding-top: 10%;  
+    }
+    .in-photo{
+        padding-top: 20%;
+    }
+    .in-photo img{
+        width: 90%;
+    }
+    .seat-photo img{
+        width: 80%;
+    }
+    .vip h2{
+        padding-top: 2%;
+    }
+    .vip-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .vip-photo-2{
+        display: flex;
+        flex-direction: row;
+    }
+    .vip001 img{
+        padding-top: 3%;
+    }
+    .vip002 img{
+        padding-top: 3%;
+    }
+    .vip001,.vip002{
+        width: 100%;
+    }
+    .vip-photo-2 img{
+        width: 85%;
+    }
+    .vip-photo-2 h4{
+        font-size: 20px;
+    }
+    .ex10,.ex11,.ex12,.ex13,.ex14{
+        margin: 0 auto;
+        background-color: white;
+        width: 60%;
+        height: 100%;
+        margin-top: 8%;
+    }
+    
+    .conv-photo1 h3{
+        padding-top: 20%;
+    }
+    .conv-photo2 h3{
+        font-size: 17px;
+    }
+    .convs{
+        padding-top: 10%;
+    }
+    .conv{
+        padding-top: 5%;
+    }
+    .conv-photo-4{
+        padding-top: 10%;
+    }
+
+    .conv-5-title img, .conv-6-title img{
+        width: 100%;
+    }
+
+    .conv-photo-5 img{
+        width: 100%;
+    }
+
+    .performance h1{
+        padding-top: 15%;
+        
+    }
+    .performance h4{
+        font-size: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+    }
+
+    .sp h4{
+        font-size: 16px;
+    }
+    .memberCountCon, .memberCountCon2, .memberCountCon3, .memberCountCon4{
+        font-size: 36px;
+    }
+    .smart-1 p{
+        font-size: 16px;
+    }
+    .smart-photo{
+        padding-top: 20%;
+    }
+    
+}
+
+
+
+@media(max-width: 767px){
+    .text-main-padding{
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .text{
+        height: 90%;
+    }
+    .text h1{
+        font-size: 50px;
+    }
+    /* 섹션1끝 */
+    
+    .car-design-title h3{
+        font-size: 19px;
+    }
+    .car-design1 img{
+        width: 50%;
+    }
+    .car-design2 h4{
+        font-size: 14px;
+        padding: 0 5%;
+    }
+    .wheel-title h2{
+        font-size: 24px;
+    }
+
+    .wheel-photo2{
+        display: flex !important;
+    }
+    
+    .wheel-photo h4{
+        font-size: 14px;
+    }
+
+    /* 섹션2끝 */
+
+
+    .tab-content-img{
+        padding-top: 25%;
+    }
+
+    .color-text a{
+        width: 30px;
+        height: 30px;
+    }
+    .car-title > h1{
+        font-size: 26px;
+    }
+
+    .text-content h1{
+        font-size: 24px;
+    }
+    /* 섹션3끝 */
+    .space-title h1{
+        font-size: 26px;
+        padding-top: 3%;
+    }
+    .space-title h3{
+        font-size: 18px;
+    }
+
+    .space-photo{
+        display: flex;
+    }
+    .space-photo img{
+        width: 65%;
+        margin: 3%;
+    }
+    .space-in-photo{
+        display: inline-block;
+        
+    }
+    .space-padding{
+        display: inline-block;
+        padding-top: 0;
+    }
+    .space-background{
+        margin-top:3%;
+    }
+
+    .space-photo p , .space-photo-2 p{
+        position: absolute;
+        left: 30%;
+    }
+    .in-4-images p{
+        top: 40%;
+        left: 10%;
+    }
+    .in-7-images p{
+        left: 10%;
+    }
+    
+    .space-in-photo2{
+        display: flex;
+    }
+    .space-1{
+        display: block;
+    }
+    .space-2{
+        display: block;
+    }
+    .space-in-photo2 img{
+        width: 90%;
+        margin: 3%;
+    }
+    /* 섹션4끝 */
+    .seat-title h3{
+        font-size: 18px;
+    }
+    .seat-text-img img{
+        width: 70%;
+    }
+    .seat-text-1 h5{
+        padding-top: 0;
+    }
+    /* 섹션5끝 */
+
+    .in-title h1{
+        font-size: 24px;
+    }
+    
+    .in-photo{
+        padding-top: 30%;
+    }
+    .slide-txt h3{
+        font-size: 18px;
+    }
+    .in-title{
+        padding-top: 20%;
+    }
+    .in-photo img{
+        width: 100%;
+    }
+
+    /* 섹션6끝 */
+
+    .cal h2{
+        font-size: 20px;
+    }
+    .cal-photo img{
+        width: 60%;
+    }
+    .cal-photo{
+        padding-top: 5%;
+    }
+
+    .cal-photo > .row > .col-sm-4{
+        display: flex;
+    }
+
+    .cal-1-text{
+        padding-left: 2%;
+    }
+    /* 섹션7끝 */
+
+    .vip-photo-2{
+        display : block;
+        }
+        
+        .vip-photo-2 img{
+        width:50%;
+        }
+        
+        .vip001,.vip002{
+        display : flex;
+        align-items: center;
+        width: 100%;
+        }
+    
+        .vip001 img{
+        padding-top: 2%;
+        }
+        
+        .vip002 img{
+        padding-top:2%;
+        }
+
+        .vip-photo-2 h4{
+            font-size: 16px;
+            width: 50%;
+        }
+        .vip h2{
+            font-size: 20px;
+        }
+        .conv-photo-3{
+            display: flex;
+            
+        }
+        .conv-photo2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .conv-photo2 div{
+            width:33.3%;
+        }
+       
+
+
+    /* 섹션8끝 */
+
+        .convs{
+            display: block;
+        }
+        .conv-photo1{
+            width: 100%;
+        }
+        .conv-photo1 h3{
+            padding-top: 2%;
+        }
+        .conv-photo1 h3{
+            font-size: 20px;
+        }
+        .conv-photo1 h4{
+            font-size: 16px;
+        }
+        
+
+    /* 섹션9끝 */
+
+    .conv-5 img, .conv-6 img{
+        width: 100%;
+    }
+
+    .conv-5-txt h3, .conv-6-txt h3{
+        font-size: 18px;
+    }
+    .conv-photo-6 img{
+        width: 100%;
+    }
+
+    .conv-5-title, .conv-6-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .conv-5,.conv-6 {
+        width: 50%;
+    }
+    .conv-5-txt, .conv-6-txt{
+        
+        width: 50%;
+    }
+
+    .conv-photo-4{
+        padding-top: 5%;
+    }
+
+    .conv-photo-5{
+        padding-top: 10%;
+    }
+   
+    /* 섹션10끝 */
+
+    .performance h1{
+        padding-top: 25%;
+        font-size: 26px;
+    }
+    .performance h3{
+        font-size: 20px;
+    }
+
+    .performance h4{
+        font-size: 16px;
+        padding-top: 5%;
+    }
+    
+
+    /* 섹션11끝 */
+    .speed h1{
+        font-size: 24px;
+    }
+    .speed-bottom{
+        display: flex;
+    }
+    .speed-bottom h3{
+        font-size: 18px;
+    }
+    /* 섹션12끝 */
+
+    .smart-1 p{
+        font-size: 14px;
+    }
+    .smart-1 h3{
+        font-size: 18px;
+    }
+
+    .modal{
+        width: 90% !important;
+        
+        padding: 0 !important;
+    }
+    .modal img{
+        width: 90% !important;
+    }
+
+    .car-photo h1{
+        font-size: 24px;
+    }
+
+    .modal-content{
+        width: 100% !important;
+    }
+    .customer{
+        
+        margin-top: 10%;
+    }
+    .ask{
+        
+        margin-top: 10%;
+    }
+    .cus-1 img{
+        width: 50%;
+    }
+    .ask-1 img{
+        width: 50%;
+    }
+    .cus-2 h4{
+        font-size: 14px;
+    }
+    .cus-3 h4{
+        font-size: 14px;
+    }
+    .cus-2 h5{
+        font-size: 12px;
+    }
+    .cus-3 h5{
+        font-size: 12px;
+    }
+    .ask-2 h5{
+        font-size: 12px;
+    }
+    .ask-1{
+        padding: 0;
+    }
+    .ask-2{
+        padding: 0;
+    }
+    .cus-2,.cus-3{
+        padding: 0;
+    }
+    .cus-1{
+        padding: 0;
+    }
+    .customer-title h1{
+        font-size: 26px;
+    }
+    .bottoms{
+        padding-top: 5%;
+    }
+    .hy-1{
+        height: 10vh;
+    }
+    .hy-2{
+        height: 35vh;
+    }
+    .hy-3{
+        height: 35vh;
+    }
+    .hy-4{
+        height: 20vh;
+    }
+}
+
+@media(max-width:500px){
+    .car-photo{
+        padding-top: 25%;
+    }
+    .space-title h5{
+        padding: 0 5%;
+    }
+
+    .tab-content-img{
+        padding-top: 40%;
+    }
+
+    .wheel-photo2{
+        display: block !important;
+    }
+    .wheel-photo img{
+        width: 40%;
+    }
+    .space-photo img{
+        width: 100%;
+    }
+    .space-photo-2 img{
+        width: 100%;
+    }
+
+    .seat{
+        padding-top: 15%;
+    }
+    .seat-text-1 h5{
+        padding-top: 5%;
+    }
+    .in-photo{
+        padding-top: 45%;
+    }
+    .cal h2{
+        padding-top: 15%;
+    }
+    .cal-photo{
+        padding-top: 20%;
+    }
+
+    .vip h2{
+        padding-top: 10%;
+    }
+    .vip-page{
+        padding-top: 20%;
+    }
+    .convs{
+        padding-top: 20%;
+    }
+    .conv-photo-4{
+        padding-top: 15%;
+    }
+    .conv-5-txt h3, .conv-6-txt h3{
+        font-size: 15px;
+    }
+    .conv-5-txt p{
+        font-size: 12px;
+    }
+    .conv-6-txt p{
+        font-size: 12px;
+    }
+    .performance h1{
+        padding-top: 35%;
+    }
+    .speed h1{
+        font-size: 22px;
+        padding-top: 5%;
+    }
+    .smart-photo{
+        padding-top: 30%;
+    }
+    .hy h1{
+        padding-top: 5%;
+    }
+    .bottoms p{
+        font-size: 10px;
+    }
+    .footer{
+        margin-top: 5%;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .ask{
+        margin-top: 0;
+    }
+}
