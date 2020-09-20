@@ -461,6 +461,7 @@ li{
   font-size: 150px;
   font-family: 'GmarketSansMedium';
   color: black;
+  overflow: hidden;
 }
 
 @media (max-width:968px){
@@ -581,3 +582,19 @@ li{
   margin-bottom: 0;
 }
 
+.cursor{
+  display: inline-block;
+  width: 3px;
+  background-color: black;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0% { background-color: black;}
+  49% { background-color: black;}
+  50% { background-color: transparent;}
+  99% { background-color: transparent;}
+  100% { background-color: black;}
+
+}
