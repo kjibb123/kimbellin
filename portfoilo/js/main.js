@@ -164,25 +164,58 @@ $(function() {
 	  });
 });
 
+$(function(){
+	$(document).ready(function(){
+		$(".typed-text").scroll(function(){
+		  
+		});
+	  });
+})
+$(function(){
+	$('.section01').scroll(function(){
 
-const typedTextSpan = document.querySelector(".typed-text");
+		const typedTextSpan = document.querySelector(".typed-text");
+
+		const textArray = ["PROFILE"];
+		const typingDelay = 200;
+
+		let textArrayIndex = 0;
+		let charIndex = 0;
+
+		function type(){
+			if(charIndex < textArray[textArrayIndex].length){
+				typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+				charIndex++;
+				setTimeout(type, typingDelay);
+			}
+			else{
+				//erase
+			}
+		}
+		
+		type();
+	});
+});
 
 
-const textArray = ["PROFILE"];
-const typingDelay = 200;
+	
 
-let textArrayIndex = 0;
-let charIndex = 0;
 
-function type(){
-    if(charIndex < textArray[textArrayIndex].length){
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
-    }
-    else{
-        //erase
-    }
-}
 
-type();
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
+		sectionSelector: '.section',
+		anchors:['first', 'second','third', 'fourth'],
+		navigation: true,
+		navigationPosition: 'right',
+		navigationTooltips: ['Main', 'Profile','Portfolio','Contact'],
+		showActiveTooltip: true,
+		scrollOverflow: true,
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(false);
+});

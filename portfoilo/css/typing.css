@@ -37,9 +37,7 @@ body{
     margin-left: 0.1rem;
     animation: blink 1s infinite;
 }
-.cursor.typing{
-    animation: none;
-}
+
 @keyframes blink{
     0% { background-color: #ccc;}
     49% { background-color: #ccc;}

@@ -22,6 +22,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	
+
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -32,8 +37,31 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				//options here
+				autoScrolling:true,
+				scrollHorizontally: true,
+				lockAnchors: false,
+				sectionSelector: '.section',
+				anchors:['first', 'second','third', 'fourth'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Main', 'Profile','Portfolio','Contact'],
+				showActiveTooltip: true,
+				scrollOverflow: true
+			});
+
+			//methods
+			$.fn.fullpage.setAllowScrolling(true);
+		});
+	</script>
+	
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -41,186 +69,194 @@
 
 	</head>
 	<body>
-		<section id="fullpage">
+		
+		<div id="fullpage">
+
+			<!-- --------------------------------------------------------------------- -->
+
+			<div class="section section01">
+				<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
+					<div class="moving-bg" style="background-image:url(images/1-2.jpg);"></div>
+					<div class="overlay"></div>
+					<div class="container startpf">
+						<div class="hamburger-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="overlaying" id="overlaying">
+							<div class="overlay-content">
+								<ul>
+									<li><a href="index.html">HOME</a></li>
+									<li><a href="about.html">PROFILE</a></li>
+									<li><a href="#">PORTFOLIO</a></li>
+									<li><a href="#">CONTACT</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center">
+								<div class="display-t js-fullheight">
+									<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+										<div class="profile-thumb" style="background: url(images/mybg-1.jpg);"></div>
+										<h1><span>KIM JONG IN</span></h1>
+										<h3><span>Web Developer / Web Designer / UIUX designer</span></h3>
+										<p>
+											<ul class="fh5co-social-icons">
+												<li><a href="https://www.instagram.com/ji_6.1/?hl=ko"><i class="icon-instagram2"></i></a></li>
+												<li><a href="https://www.facebook.com/profile.php?id=100003212924155"><i class="icon-facebook2"></i></a></li>
+												<li><a href="mailto:hjtoi519@gmail.com"><i class="icon-google2"></i></a></li>
+												<li><a href="https://github.com/kjibb123/kimbellin"><i class="icon-github2"></i></a></li>
+											</ul>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+
+			<!-- --------------------------------------------------------------------- -->
 
 			<div class="section">
-				<section>
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
-		<div class="moving-bg" style="background-image:url(images/1-2.jpg);"></div>
-		<div class="overlay"></div>
-		<div class="container startpf">
-			<div class="hamburger-menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="overlaying" id="overlaying">
-				<div class="overlay-content">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="about.html">PROFILE</a></li>
-						<li><a href="#">PORTFOLIO</a></li>
-						<li><a href="#">CONTACT</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/mybg-1.jpg);"></div>
-							<h1><span>KIM JONG IN</span></h1>
-							<h3><span>Web Developer / Web Designer / UIUX designer</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://www.instagram.com/ji_6.1/?hl=ko"><i class="icon-instagram2"></i></a></li>
-									<li><a href="https://www.facebook.com/profile.php?id=100003212924155"><i class="icon-facebook2"></i></a></li>
-									<li><a href="mailto:hjtoi519@gmail.com"><i class="icon-google2"></i></a></li>
-									<li><a href="https://github.com/kjibb123/kimbellin"><i class="icon-github2"></i></a></li>
-								</ul>
-							</p>
+				<div id="profile-page">
+					<!-- <div id="keyboard-page">
+						<div class="keyboard">
+							<div class="k-row one">
+								<button class="k-button">~</button>
+								<button class="k-button">1</button>
+								<button class="k-button">2</button>
+								<button class="k-button">3</button>
+								<button class="k-button">4</button>
+								<button class="k-button">5</button>
+								<button class="k-button">6</button>
+								<button class="k-button">7</button>
+								<button class="k-button">8</button>
+								<button class="k-button">9</button>
+								<button class="k-button">0</button>
+								<button class="k-button">-</button>
+								<button class="k-button">=</button>
+								<button class="k-button back">Backspace</button>
+							</div>
+					
+							<div class="k-row two">
+								<button class="k-button k-tab">Tab</button>
+								<button class="k-button">Q</button>
+								<button class="k-button">W</button>
+								<button class="k-button">E</button>
+								<button class="k-button">R</button>
+								<button class="k-button">T</button>
+								<button class="k-button">Y</button>
+								<button class="k-button">U</button>
+								<button class="k-button">I</button>
+								<button class="k-button">O</button>
+								<button class="k-button">P</button>
+								<button class="k-button">[</button>
+								<button class="k-button">]</button>
+								<button class="k-button slace">\</button>
+							</div>
+					
+							<div class="k-row three">
+								<button class="k-button cap">Cap</button>
+								<button class="k-button">A</button>
+								<button class="k-button">S</button>
+								<button class="k-button">D</button>
+								<button class="k-button">F</button>
+								<button class="k-button">G</button>
+								<button class="k-button">H</button>
+								<button class="k-button">J</button>
+								<button class="k-button">K</button>
+								<button class="k-button">L</button>
+								<button class="k-button">;</button>
+								<button class="k-button">'</button>
+								<button class="k-button ent-btn">Enter</button>
+							</div>
+					
+							<div class="k-row four">
+								<button class="k-button shift">Shift</button>
+								<button class="k-button">Z</button>
+								<button class="k-button">X</button>
+								<button class="k-button">C</button>
+								<button class="k-button">V</button>
+								<button class="k-button">B</button>
+								<button class="k-button">N</button>
+								<button class="k-button">M</button>
+								<button class="k-button"><</button>
+								<button class="k-button">></button>
+								<button class="k-button">?</button>
+								<button class="k-button shift">Shift</button>
+							</div>
+					
+							<div class="k-row five">
+								<button class="k-button other">Ctrl</button>
+								<button class="k-button other">Fn</button>
+								<button class="k-button other">Win</button>
+								<button class="k-button other">Alt</button>
+								<button class="k-button space">Space</button>
+								<button class="k-button other">Alt</button>
+								<button class="k-button other">Fn</button>
+								<button class="k-button other">Ctrl</button>
+							</div>
+					
+						</div>
+					</div> -->
+				
+					<div class="container-fluid profile-page-1">
+						<div class="row">
+							<div class="col-sm-12 profile-box">
+								<div class="profile-text">
+									<h1><a href="about.html"><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></a></h1>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
-		</div>
-	</header>
-</section>
-</div>
-	
-	
-<div class="section">
 
-	<div id="profile-page">
-		<!-- <div id="keyboard-page">
-			<div class="keyboard">
-				<div class="k-row one">
-					<button class="k-button">~</button>
-					<button class="k-button">1</button>
-					<button class="k-button">2</button>
-					<button class="k-button">3</button>
-					<button class="k-button">4</button>
-					<button class="k-button">5</button>
-					<button class="k-button">6</button>
-					<button class="k-button">7</button>
-					<button class="k-button">8</button>
-					<button class="k-button">9</button>
-					<button class="k-button">0</button>
-					<button class="k-button">-</button>
-					<button class="k-button">=</button>
-					<button class="k-button back">Backspace</button>
-				</div>
-		
-				<div class="k-row two">
-					<button class="k-button k-tab">Tab</button>
-					<button class="k-button">Q</button>
-					<button class="k-button">W</button>
-					<button class="k-button">E</button>
-					<button class="k-button">R</button>
-					<button class="k-button">T</button>
-					<button class="k-button">Y</button>
-					<button class="k-button">U</button>
-					<button class="k-button">I</button>
-					<button class="k-button">O</button>
-					<button class="k-button">P</button>
-					<button class="k-button">[</button>
-					<button class="k-button">]</button>
-					<button class="k-button slace">\</button>
-				</div>
-		
-				<div class="k-row three">
-					<button class="k-button cap">Cap</button>
-					<button class="k-button">A</button>
-					<button class="k-button">S</button>
-					<button class="k-button">D</button>
-					<button class="k-button">F</button>
-					<button class="k-button">G</button>
-					<button class="k-button">H</button>
-					<button class="k-button">J</button>
-					<button class="k-button">K</button>
-					<button class="k-button">L</button>
-					<button class="k-button">;</button>
-					<button class="k-button">'</button>
-					<button class="k-button ent-btn">Enter</button>
-				</div>
-		
-				<div class="k-row four">
-					<button class="k-button shift">Shift</button>
-					<button class="k-button">Z</button>
-					<button class="k-button">X</button>
-					<button class="k-button">C</button>
-					<button class="k-button">V</button>
-					<button class="k-button">B</button>
-					<button class="k-button">N</button>
-					<button class="k-button">M</button>
-					<button class="k-button"><</button>
-					<button class="k-button">></button>
-					<button class="k-button">?</button>
-					<button class="k-button shift">Shift</button>
-				</div>
-		
-				<div class="k-row five">
-					<button class="k-button other">Ctrl</button>
-					<button class="k-button other">Fn</button>
-					<button class="k-button other">Win</button>
-					<button class="k-button other">Alt</button>
-					<button class="k-button space">Space</button>
-					<button class="k-button other">Alt</button>
-					<button class="k-button other">Fn</button>
-					<button class="k-button other">Ctrl</button>
-				</div>
-		
-			</div>
-		</div> -->
-	
-		<div class="container-fluid profile-page-1">
-			<div class="row">
-				<div class="col-sm-12 profile-box">
-					<div class="profile-text">
-						<h1><a href="about.html"><span class="typed-text"></span><span class="cursor typing">&nbsp;</span></a></h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+			<!-- --------------------------------------------------------------------- -->
 
-</div>
+			<div class="section">
 
-<div class="section">
-
-	<div id="portfolio-page">
-		<div class="container-fluid profile-page-1">
-			<div class="row">
-				<div class="col-sm-12 profile-box">
-					<div class="profile-text">
-						<h1><a href="portfolio.html">PORTFOLIO</a></h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-<div class="section">
-
-		<div id="contact-page">
-			<div class="container-fluid profile-page-1">
-				<div class="row">
-					<div class="col-sm-12 profile-box">
-						<div class="profile-text">
-							<h1><a href="portfolio.html">CONTACT</a></h1>
+				<div id="portfolio-page">
+					<div class="container-fluid profile-page-1">
+						<div class="row">
+							<div class="col-sm-12 profile-box">
+								<div class="profile-text">
+									<h1><a href="portfolio.html">PORTFOLIO</a></h1>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
+
+			<!-- --------------------------------------------------------------------- -->
+
+			<div class="section">
+
+				<div id="contact-page">
+					<div class="container-fluid profile-page-1">
+						<div class="row">
+							<div class="col-sm-12 profile-box">
+								<div class="profile-text">
+									<h1><a href="portfolio.html">CONTACT</a></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
+			
 
-	</div>
-		
-	<div class="section">
 
-		<div id="fh5co-footer" style="background-color:#2a2a2a;">
+
+		<!-- <div id="fh5co-footer" style="background-color:#2a2a2a;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -228,14 +264,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-	</div>
-
-</section>
-
-
-
+		</div> -->
 
 
 
@@ -255,10 +284,15 @@
 	<!-- Google Map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<script src="js/google_map.js"></script>
-	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script>
+		AOS.init();
+	</script>
 	</body>
 </html>
 
