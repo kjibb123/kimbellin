@@ -602,3 +602,7 @@ li{
 .fp-tooltip{
   color: black !important;
 }
+
+#fullpage{
+  position: relative;
+}
