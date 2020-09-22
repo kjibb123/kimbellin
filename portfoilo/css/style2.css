@@ -469,19 +469,20 @@
     opacity: 0;
     opacity: 1 \9;
 
-    -webkit-animation:fadeIn ease-in 1;
-    -moz-animation:fadeIn ease-in 1;
-    animation: fadeIn ease-in 1;
-    animation-iteration-count: infinite;
+    -webkit-animation:fadeIn ease-in-out 1;
+    -moz-animation:fadeIn ease-in-out 1;
+    animation: fadeIn ease-in-out 1;
+    
 
     -webkit-animation-fill-mode:forwards;
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
-    animation-iteration-count: infinite;
+    
 
     -webkit-animation-duration:1s;
     -moz-animation-duration:1s;
     animation-duration:1s;
+
     animation-iteration-count: infinite;
   }
 
