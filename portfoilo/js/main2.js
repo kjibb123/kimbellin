@@ -164,16 +164,6 @@ $(function() {
 	  });
 });
 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (document.body.scrollTop > 1080 || document.documentElement.scrollTop > 1080) {
-    document.getElementById("profile-text").className = "slideUp";
-  }
-}
-
-
-
 
 		// const typedTextSpan = document.querySelector(".typed-text");
 
@@ -219,3 +209,14 @@ function myFunction() {
 // });
 
 
+$(function(){
+	$('.profile-text').mouseenter(function(){
+		$('.profile-page-1').css('backgroundColor','#2a2a2a');
+		$('.k-p').css('background','#111')
+
+	});
+	$('.profile-text').mouseleave(function(){
+		$('.profile-page-1').css('backgroundColor','#fff');
+		
+	});
+});

@@ -171,8 +171,7 @@ $(function(){
 		});
 	  });
 })
-$(function(){
-	$('.section01').scroll(function(){
+
 
 		const typedTextSpan = document.querySelector(".typed-text");
 
@@ -182,6 +181,7 @@ $(function(){
 		let textArrayIndex = 0;
 		let charIndex = 0;
 
+	
 		function type(){
 			if(charIndex < textArray[textArrayIndex].length){
 				typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
@@ -194,8 +194,7 @@ $(function(){
 		}
 		
 		type();
-	});
-});
+
 
 
 	
@@ -219,3 +218,5 @@ $(document).ready(function() {
 	//methods
 	$.fn.fullpage.setAllowScrolling(false);
 });
+
+
