@@ -164,6 +164,14 @@ $(function() {
 	  });
 });
 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 1080 || document.documentElement.scrollTop > 1080) {
+    document.getElementById("profile-text").className = "slideUp";
+  }
+}
+
 
 
 
