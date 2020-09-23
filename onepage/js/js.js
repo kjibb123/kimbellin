@@ -40,36 +40,36 @@ $(function(){
     });
     // 나인블럭 클릭시 bold효과와 슬라이드 변화
 
-    $('.box4').mouseenter(function(){
-        $('.box4').css("background","#fed100");
-        $('#box4').css("color","white");
-    });
-    $('.box4').mouseleave(function(){
-        $('.box4').css("background","#fff");
-        $('#box4').css("color","black");
-    });
-    // 지혜의숲 hover 색 변화 효과
-    $('.box5').mouseenter(function(){
-        $('.box5').css("background","#fed100");
-        $('#box5').css("color","white");
-    });
-    $('.box5').mouseleave(function(){
-        $('.box5').css("background","#fff");
-        $('#box5').css("color","black");
-    });
-    // 지지향 hover 색 변화 효과
-    $('.box6').mouseenter(function(){
-        $('.box6').css("background","#fed100");
-        $('#box6').css("color","white");
-    });
-    $('.box6').mouseleave(function(){
-        $('.box6').css("background","#fff");
-        $('#box6').css("color","black");
-    });
-    // 나인블럭 hover 색 변화 효과
-    $('.slide1').mouseenter(function(){
-        ('slide2').css("display","none");
-    });
+    // $('.box4').mouseenter(function(){
+    //     $('.box4').css("background","#fed100");
+    //     $('#box4').css("color","white");
+    // });
+    // $('.box4').mouseleave(function(){
+    //     $('.box4').css("background","#fff");
+    //     $('#box4').css("color","black");
+    // });
+    // // 지혜의숲 hover 색 변화 효과
+    // $('.box5').mouseenter(function(){
+    //     $('.box5').css("background","#fed100");
+    //     $('#box5').css("color","white");
+    // });
+    // $('.box5').mouseleave(function(){
+    //     $('.box5').css("background","#fff");
+    //     $('#box5').css("color","black");
+    // });
+    // // 지지향 hover 색 변화 효과
+    // $('.box6').mouseenter(function(){
+    //     $('.box6').css("background","#fed100");
+    //     $('#box6').css("color","white");
+    // });
+    // $('.box6').mouseleave(function(){
+    //     $('.box6').css("background","#fff");
+    //     $('#box6').css("color","black");
+    // });
+    // // 나인블럭 hover 색 변화 효과
+    // $('.slide1').mouseenter(function(){
+    //     ('slide2').css("display","none");
+    // });
 
     $('.main_logo2').click(function(){
         $('.menuNav').slideUp();
