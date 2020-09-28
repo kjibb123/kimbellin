@@ -272,13 +272,7 @@
       
     }
   
-    .profile-thumb:hover{
-        width: 300px !important;
-        height: 300px !important;
-        transform: rotate(360deg);
-      }
-  
-   
+    
   
   #fh5co-header .display-t,
   .fh5co-cover .display-t {
@@ -439,6 +433,7 @@
   #profile-page{
     width: 100%;
     height: 100vh;
+    position: relative;
   }
   .profile-page-1{
     width: 100%;
@@ -461,11 +456,11 @@
     font-size: 150px;
     font-family: 'GmarketSansMedium';
     color: black;
+
   }
 
   .profile-text a:hover{
-    color: #ff9000;
-
+    color: #fff;
   }
 
 
@@ -486,6 +481,7 @@
   #portfolio-page{
     width: 100%;
     height: 100vh;
+    position: relative;
   }
   
   /* ------------------------------------------------- */
@@ -608,7 +604,8 @@
   }
   
   .fp-tooltip{
-    color: black !important;
+    color: #333 !important;
+    top: -4px !important;
   }
   
   #fullpage{
@@ -654,4 +651,12 @@
     }
   }
    */
+
+   canvas {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
   

@@ -172,6 +172,12 @@ $(function(){
 	  });
 })
 
+		var myVar;
+
+		function mytype() {
+			myVar = setInterval(type, 1000);
+		  }
+
 
 		const typedTextSpan = document.querySelector(".typed-text");
 
@@ -182,19 +188,34 @@ $(function(){
 		let charIndex = 0;
 
 	
-		function type(){
-			if(charIndex < textArray[textArrayIndex].length){
-				typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-				charIndex++;
-				setTimeout(type, typingDelay);
-			}
-			else{
-				//erase
-			}
-		}
-		
-		type();
+		window.onscroll = function() {myFunction()};
 
+			function myFunction() {
+			  if (document.body.scrollTop > 1080 || document.documentElement.scrollTop > 1080) {
+
+				function type(){
+					if(charIndex < textArray[textArrayIndex].length){
+						typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+						charIndex++;
+					}
+					else{
+						//erase
+					}
+					setTimeout(type, typingDelay);
+			
+					}
+				type();
+	  }
+	}
+
+		
+		
+	
+		
+
+		
+		
+	
 
 
 	
